@@ -1,0 +1,10 @@
+<a href="/basketball/view">Basketball</a>
+<a href="/soccer/view">Soccer</a>
+<a href="/football/view">Football</a>
+<h1><%= @sport[:name] %></h1>
+<h2>Top Players</h2>
+<ol>
+  <% @sport[:top_players].each do |player| %>
+    <li><%= player %></li>
+  <% end %>
+</ol>

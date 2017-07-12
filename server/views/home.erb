@@ -1,0 +1,13 @@
+<div>
+  <h1>test</h1>
+  <% if @is_preggo %>
+    <%= @name %> is pregnant
+  <% else %>
+    <%= @name %> is not pregnant
+  <% end %>
+  <ol>
+  <% @friends.each do |friend| %>
+    <li><%= friend %></li>
+  <% end %>
+  </ol>
+</div>
